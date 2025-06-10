@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Ondas (Scala.js)</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de la fuente Inter desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-primary {
+            background-color: #3b82f6;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #2563eb;
+        }
+        .btn-secondary {
+            background-color: #6b7280;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: #4b5563;
+        }
+        .answer-hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4 sm:p-6 md:p-8">
+
+<div class="max-w-4xl mx-auto">
+    <header class="text-center mb-8">
+        <h1 class="text-3xl sm:text-4xl font-bold text-gray-800">Generador de Ejercicios de Ondas</h1>
+        <p class="text-gray-600 mt-2">Hecho con Scala.js. ¡Haz clic en "Nuevo Ejercicio" para un nuevo desafío!</p>
+    </header>
+
+    <div class="card" id="problem-card">
+        <h2 class="text-xl font-bold mb-2 text-gray-700">Enunciado del Problema</h2>
+        <p id="problem-text" class="text-gray-600">Cargando ejercicio...</p>
+    </div>
+
+    <div class="card">
+        <h2 class="text-xl font-bold mb-4 text-gray-700">Visualización de la Onda</h2>
+        <div class="bg-gray-50 p-2 rounded-lg border border-gray-200">
+            <canvas id="waveCanvas"></canvas>
+        </div>
+        <p class="text-sm text-gray-500 mt-2 text-center">Eje Y: Amplitud (m) | Eje X: Distancia (m)</p>
+    </div>
+
+    <div class="card grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+            <h2 class="text-xl font-bold mb-4 text-gray-700">🤔 Tu Misión</h2>
+            <p class="mb-4 text-gray-600">Observando la gráfica y usando los datos del enunciado, calcula:</p>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Amplitud (A)</li>
+                <li>Longitud de onda (λ)</li>
+                <li>Periodo (T)</li>
+                <li>Frecuencia (f)</li>
+                <li>Rapidez de propagación (v)</li>
+            </ul>
+        </div>
+        <div class="flex flex-col items-center justify-center space-y-4">
+            <button id="new-exercise-btn" class="btn btn-primary w-full max-w-xs">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M21 12a9 9 0 0 1-9 9H3.5a2.5 2.5 0 0 1 0-5H12a.5.5 0 0 0 0-1H5a2.5 2.5 0 0 0 0-5H12a8.5 8.5 0 0 1 8.5 8.5Z"/></svg>
+                Nuevo Ejercicio
+            </button>
+            <button id="show-answer-btn" class="btn btn-secondary w-full max-w-xs">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+                Mostrar Respuestas
+            </button>
+        </div>
+    </div>
+
+    <div id="answer-card" class="card answer-hidden">
+        <h2 class="text-xl font-bold mb-4 text-emerald-700">✅ Solución y Procedimiento</h2>
+        <div id="answer-content" class="space-y-4 text-gray-700"></div>
+    </div>
+</div>
+
+<!--
+  Este script carga el archivo JavaScript compilado desde tu código Scala.
+  1. El 'type="module"' es la forma moderna y recomendada.
+  2. La ruta es relativa a la ubicación de este archivo index.html.
+     Asegúrate de que este HTML esté en la carpeta raíz de tu proyecto sbt.
+-->
+<script type="module" src="./target/scala-3.3.3/ejercicio-ondas-scalajs-fastopt/main.js"></script>
+
+</body>
+</html>

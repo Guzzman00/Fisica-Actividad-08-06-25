@@ -1,0 +1,7 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(fastOptJS, Some(71cce946-07ab-4541-8f0b-e6c6e9aa9a38), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / fastOptJS[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mFast optimizing C:\Users\guzzm\Desktop\fisica-actividad-08-06-25\target\scala-3.3.3\ejercicio-ondas-scalajs-fastopt[0m
+[0m[[0m[0mdebug[0m] [0m[0mGlobal IR cache stats: reused: 0 -- invalidated: 12 -- trees read: 490[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 9 s, completed 10-06-2025 13:48:22[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

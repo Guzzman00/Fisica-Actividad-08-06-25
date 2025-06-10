@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(1cfb2dc6-d814-47e4-9b9c-0327593b7a7a), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\guzzm\Desktop\fisica-actividad-08-06-25\target\scala-3.3.3\classes ...[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 14 s, completed 10-06-2025 13:45:06[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

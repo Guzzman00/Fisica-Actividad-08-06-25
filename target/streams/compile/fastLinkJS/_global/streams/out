@@ -1,0 +1,25 @@
+[0m[[0m[0minfo[0m] [0m[0mFast optimizing C:\Users\guzzm\Desktop\fisica-actividad-08-06-25\target\scala-3.3.3\ejercicio-ondas-scalajs-fastopt[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 1371245 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 203473 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: 1649271 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Batch mode: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Incremental part: 570556 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Elidable constructors: 9083 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizing 2931 methods.[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizer part: 2109650 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: 2704839 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 131572 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 9978 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: 144386 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: Calculate Dependency Info: 3735 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: Analyze Modules: 1340 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: Assemble Modules: 7867 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: 15346 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Generate Classes: 949633 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Write trees: 78289 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 0 -- invalidated: 283[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: reused: 0 -- invalidated: 925[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Post transforms: total: 1471 -- nested: 35 -- nested avoided: 152[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: 1082280 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasicBackend: Write result: 71292 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasicBackend: total modules: 1; re-written: 1[0m
