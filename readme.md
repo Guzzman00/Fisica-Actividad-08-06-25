@@ -1,4 +1,4 @@
-reaquisitos:
+requisitos:
 
 -instalar desde el siguiente link https://github.com/sbt/sbt/releases/download/v1.10.1/sbt-1.10.1.msi SBT 1.10.10 (retro compatible con versiones anteriores del SBT, pero adjunto uno más antiguo por si es necesario https://github.com/sbt/sbt/releases/download/v1.8.3/sbt-1.8.3.msi) para que podamos transpilar Scala a JavaScript
 
